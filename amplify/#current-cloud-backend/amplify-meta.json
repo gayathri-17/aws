@@ -1,0 +1,68 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-test-dev-10619-authRole",
+      "UnauthRoleArn": "arn:aws:iam::986366301380:role/amplify-test-dev-10619-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::986366301380:role/amplify-test-dev-10619-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-test-dev-10619-deployment",
+      "UnauthRoleName": "amplify-test-dev-10619-unauthRole",
+      "StackName": "amplify-test-dev-10619",
+      "StackId": "arn:aws:cloudformation:us-east-2:986366301380:stack/amplify-test-dev-10619/e604bbc0-868e-11eb-9e79-02f4fb1d662e",
+      "AmplifyAppId": "d343v2rfxp635b"
+    }
+  },
+  "auth": {
+    "testa33c7c28": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-test-dev-10619-deployment/amplify-cfn-templates/auth/testa33c7c28-cloudformation-template.yml",
+        "logicalId": "authtesta33c7c28"
+      },
+      "lastPushTimeStamp": "2021-03-17T06:48:54.149Z",
+      "output": {
+        "UserPoolId": "us-east-2_Hu65oi5Xu",
+        "AppClientIDWeb": "4afa4f3q5e2ud1vnq6d6d3dscd",
+        "AppClientID": "764joedb2atsrqlul9lidiqdib",
+        "IdentityPoolId": "us-east-2:7a9b90d9-24b0-40a4-b81d-1a44ade21d57",
+        "IdentityPoolName": "testa33c7c28_identitypool_a33c7c28__dev",
+        "UserPoolName": "testa33c7c28_userpool_a33c7c28"
+      },
+      "lastPushDirHash": "K01rpD+BJOShUnthi/2BhukWsFw="
+    }
+  },
+  "storage": {
+    "test88f53fb7": {
+      "service": "S3",
+      "serviceType": "imported",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "BucketName": "gvod-dev-input-ihv97pr4",
+        "Region": "us-east-2"
+      },
+      "lastPushTimeStamp": "2021-03-17T06:49:17.136Z"
+    }
+  },
+  "video": {
+    "gvod": {
+      "service": "video",
+      "serviceType": "video-on-demand",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-test-dev-10619-deployment/amplify-cfn-templates/video/gvod-vod-workflow-template.yaml",
+        "logicalId": "videogvod"
+      },
+      "lastPushTimeStamp": "2021-03-17T06:48:54.152Z",
+      "output": {
+        "oVodOutputUrl": "gvod-dev-output-ihv97pr4.s3.us-east-2.amazonaws.com",
+        "oVODOutputS3": "gvod-dev-output-ihv97pr4",
+        "oVODInputS3": "gvod-dev-input-ihv97pr4"
+      },
+      "lastPushDirHash": "c4KqmHyLVtzpKPg8nCNhrue873A="
+    }
+  }
+}
